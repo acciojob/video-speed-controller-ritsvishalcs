@@ -1,9 +1,40 @@
-:root {
-  --spacing: 10px;
-  --blur: 5px;
+.player {
+  max-width: 750px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  background: #333;
+  color: white;
 }
 
-img {
-  padding: var(--spacing);
-  filter: blur(var(--blur));
+.viewer {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+button, input[type="range"] {
+  margin: 5px;
+  font-size: 16px;
+}
+
+.progress {
+  flex: 1;
+  height: 8px;
+  background: #555;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.progress__filled {
+  width: 0;
+  background: #f90;
+  flex: 0;
+  height: 100%;
+  transition: width 0.1s linear;
 }
