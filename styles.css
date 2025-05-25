@@ -1,2 +1,45 @@
 
 /* Your CSS Code here. */
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.flex {
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.speed {
+  width: 30px;
+  height: 430px;
+  background: #efefef;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.speed-bar {
+  background: linear-gradient(to top, #f90, #f00);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 5px 0;
+  font-weight: bold;
+  height: 10%;
+  transition: height 0.1s ease;
+}
